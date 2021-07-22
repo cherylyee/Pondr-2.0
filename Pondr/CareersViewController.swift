@@ -8,11 +8,34 @@
 import UIKit
 
 class CareersViewController: UIViewController {
-
+    
+    var careerVC = ViewController()
+    
+    @IBOutlet weak var firstDefaultCareer: UILabel!
+    @IBOutlet weak var careerPageTextField: UITextField!
+    
+    @IBAction func enterButtonTapped(_ sender: UIButton) {
+        if let careerInput = careerPageTextField.text {
+            careerVC.careerTextField.text =
+            "\(careerVC.careerTextField.text ?? ""), \(careerInput)"
+        }
+        
+        if let careerField = careerVC.careerTextField {
+            if let career = careerField.text {
+                firstDefaultCareer.text = career
+            }
+        }
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        if let careerField = careerVC.careerTextField {
+            if let career = careerField.text {
+                firstDefaultCareer.text = career
+            }
+        }
     }
     
 

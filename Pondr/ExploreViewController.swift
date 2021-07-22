@@ -9,7 +9,19 @@ import UIKit
 
 class ExploreViewController: UIViewController {
     var exploringVC = ViewController()
-
+    @IBOutlet weak var careerLogLabel: UILabel!
+    
+    @IBAction func addCareerTapped(_ sender: UIButton) {
+        exploringVC.careerTextField.text =
+        "\(exploringVC.careerTextField.text ?? ""), \(careerLogLabel.text ?? "")"
+        
+        let careerArray : [String] = ["Programmer 💻",
+        "Basketball 🏀", "Teacher 📚", "Astronaut 🚀"]
+        let randomInt = Int.random(in: 0..<careerArray.count)
+        careerLogLabel.text = careerArray[randomInt]
+            
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

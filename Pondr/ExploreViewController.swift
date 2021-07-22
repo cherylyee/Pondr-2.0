@@ -47,6 +47,12 @@ class ExploreViewController: UIViewController {
         if let pondView = segue.destination as? PondViewController {
             pondView.previousVC = exploringVC
         }
+        
+        if let careerVC =
+        segue.destination as?
+            CareersViewController {
+            careerVC.careerVC = exploringVC
+        }
     }
     
 

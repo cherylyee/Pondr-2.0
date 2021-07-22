@@ -10,15 +10,21 @@ import UIKit
 class ExploreViewController: UIViewController {
     var exploringVC = ViewController()
     @IBOutlet weak var careerLogLabel: UILabel!
+    var counter = 1;
     
     @IBAction func addCareerTapped(_ sender: UIButton) {
         exploringVC.careerTextField.text =
         "\(exploringVC.careerTextField.text ?? ""), \(careerLogLabel.text ?? "")"
         
-        let careerArray : [String] = ["Programmer 💻",
+        let careerArray : [String] = ["Tennis 🎾", "Programmer 💻",
         "Basketball 🏀", "Teacher 📚", "Astronaut 🚀"]
-        let randomInt = Int.random(in: 0..<careerArray.count)
-        careerLogLabel.text = careerArray[randomInt]
+        if (counter < careerArray.count) {
+            careerLogLabel.text = careerArray[counter]
+            counter = counter + 1
+        } else {
+            careerLogLabel.text = careerArray[0]
+            counter = 1;
+        }
             
         
     }

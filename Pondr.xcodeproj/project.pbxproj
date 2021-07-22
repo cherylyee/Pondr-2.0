@@ -19,6 +19,7 @@
 		CF2B8B0126A7699E00F68530 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2B8AFF26A7699E00F68530 /* LaunchScreen.storyboard */; };
 		CF2B8B0C26A7699E00F68530 /* PondrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B8B0B26A7699E00F68530 /* PondrTests.swift */; };
 		CF2B8B1726A7699E00F68530 /* PondrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B8B1626A7699E00F68530 /* PondrUITests.swift */; };
+		CFAEA4FF26A9F3A900A718F2 /* CareersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAEA4FE26A9F3A900A718F2 /* CareersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		CF2B8B1226A7699E00F68530 /* PondrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PondrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2B8B1626A7699E00F68530 /* PondrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PondrUITests.swift; sourceTree = "<group>"; };
 		CF2B8B1826A7699E00F68530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFAEA4FE26A9F3A900A718F2 /* CareersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				8B63DC2726A8972400C97BB1 /* PondViewController.swift */,
 				8B63DC2926A8974500C97BB1 /* ExploreViewController.swift */,
 				8B63DC2B26A8A8FE00C97BB1 /* ProfileViewController.swift */,
+				CFAEA4FE26A9F3A900A718F2 /* CareersViewController.swift */,
 			);
 			path = Pondr;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			files = (
 				CF2B8AF626A7699D00F68530 /* ViewController.swift in Sources */,
 				8B63DC2826A8972400C97BB1 /* PondViewController.swift in Sources */,
+				CFAEA4FF26A9F3A900A718F2 /* CareersViewController.swift in Sources */,
 				8B63DC2A26A8974500C97BB1 /* ExploreViewController.swift in Sources */,
 				CF2B8AFC26A7699D00F68530 /* Pondr.xcdatamodeld in Sources */,
 				8B63DC2C26A8A8FE00C97BB1 /* ProfileViewController.swift in Sources */,
